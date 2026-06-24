@@ -6,7 +6,7 @@ import plotly.graph_objects as go
 import plotly.express as px
 import pandas as pd
 import sqlite3
-import database.database.py
+from database import database
 from auth import create_user, login_user,get_all_users
 # from database import db_operations
 import sys
