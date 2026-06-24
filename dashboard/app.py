@@ -36,7 +36,7 @@ sys.path.append(
 from digital_twin.twin import DigitalTwin
 import sqlite3
 
-conn = sqlite3.connect("database/healthcare.db")
+conn = sqlite3.connect("healthcare.db")
 cursor = conn.cursor()
 
 cursor.execute("""
