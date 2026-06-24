@@ -16,7 +16,7 @@ VALUES
     'admin',
     'admin@gmail.com',
     'admin123',
-    'Doctor'
+    'admin'
 )
 """)
 
