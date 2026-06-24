@@ -29,6 +29,22 @@ CREATE TABLE IF NOT EXISTS patient_history(
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 )
 """)
+cursor.execute("""
+INSERT INTO users
+(
+    username,
+    email,
+    password,
+    role
+)
+VALUES
+(
+    'admin1',
+    'admin1@gmail.com',
+    'admin123',
+    'admin'
+)
+""")
 
 conn.commit()
 conn.close()
