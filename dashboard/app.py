@@ -34,32 +34,7 @@ sys.path.append(
 )
 
 from digital_twin.twin import DigitalTwin
-import sqlite3
 
-conn = sqlite3.connect("healthcare.db")
-cursor = conn.cursor()
-
-cursor.execute("""
-INSERT INTO users
-(
-    username,
-    email,
-    password,
-    role
-)
-VALUES
-(
-    'admin',
-    'admin@gmail.com',
-    'admin123',
-    'admin'
-)
-""")
-
-conn.commit()
-conn.close()
-
-print("Admin account created successfully!")
 # -----------------------------
 # Page Config
 # -----------------------------
