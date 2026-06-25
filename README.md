@@ -232,7 +232,7 @@ streamlit run dashboard/app.py
 
 ## Login
 
-> Add Screenshot
+![Login](screenshots/login.png)
 
 ---
 
