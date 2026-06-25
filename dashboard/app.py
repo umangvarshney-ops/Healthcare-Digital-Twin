@@ -119,8 +119,7 @@ if not st.session_state.logged_in:
             "Role",
             [
                 "Patient",
-                "Doctor",
-                "Admin"
+                "Doctor"
             ],
             key="reg_role"
         )
