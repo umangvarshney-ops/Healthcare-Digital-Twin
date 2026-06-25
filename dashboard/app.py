@@ -21,9 +21,6 @@ ROOT_DIR = os.path.dirname(
 sys.path.append(ROOT_DIR)
 from database import db_operations
 from database.db_operations import save_patient_history
-# -----------------------------
-# Fix Import Path
-# -----------------------------
 sys.path.append(
     os.path.abspath(
         os.path.join(
@@ -34,6 +31,32 @@ sys.path.append(
 )
 
 from digital_twin.twin import DigitalTwin
+import sqlite3
+
+conn = sqlite3.connect("database/healthcare.db")
+cursor = conn.cursor()
+
+cursor.execute("""
+INSERT INTO users
+(
+    username,
+    email,
+    password,
+    role
+)
+VALUES
+(
+    'admin2',
+    'admin2@gmail.com',
+    'admin123',
+    'Doctor'
+)
+""")
+
+conn.commit()
+conn.close()
+
+print("Admin account created successfully!")
 
 # -----------------------------
 # Page Config
