@@ -97,15 +97,16 @@ def get_all_users():
     conn = sqlite3.connect("database/healthcare.db")
     cursor = conn.cursor()
 
-    cursor.execute(
-        """
-        SELECT id,
-               username,
-               email,
-               role
+    cursor.execute("""
+        SELECT
+            id,
+            username,
+            email,
+            role
         FROM users
-        """
-    )
+        WHERE username != 'admin'
+    """)
+
 
     users = cursor.fetchall()
 
