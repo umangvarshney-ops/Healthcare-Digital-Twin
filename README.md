@@ -238,37 +238,31 @@ streamlit run dashboard/app.py
 
 ## Patient Dashboard
 
-> Add Screenshot
-
----
-
-## Health Analytics
-
-> Add Screenshot
+![Dashboard](screenshots/dashboard.png)
 
 ---
 
 ## Health Forecast
 
-> Add Screenshot
+![Forecast](screenshots/forecast.png)
 
 ---
 
 ## Doctor Dashboard
 
-> Add Screenshot
+![Doctor Dashboard](screenshots/doctor_dashboard.png)
 
 ---
 
 ## Patient History
 
-> Add Screenshot
+![History](screenshots/history.png)
 
 ---
 
 ## PDF Report
 
-> Add Screenshot
+![PDF Report](screenshots/pdf_report.png)
 
 ---
 
