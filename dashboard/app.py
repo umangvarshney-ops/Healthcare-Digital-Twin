@@ -46,10 +46,10 @@ INSERT INTO users
 )
 VALUES
 (
-    'admin2',
-    'admin2@gmail.com',
+    'admin',
+    'admin@gmail.com',
     'admin123',
-    'Doctor'
+    'Admin'
 )
 """)
 
