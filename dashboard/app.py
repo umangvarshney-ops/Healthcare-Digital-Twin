@@ -1,41 +1,29 @@
-
-import streamlit as st
-import sys
 import os
+import sys
+
+ROOT_DIR = os.path.abspath(
+    os.path.join(
+        os.path.dirname(__file__),
+        ".."
+    )
+)
+
+sys.path.insert(0, ROOT_DIR)
+import streamlit as st
 import plotly.graph_objects as go
 import plotly.express as px
 import pandas as pd
 import sqlite3
+
 from database.database import *
-from auth import create_user, login_user,get_all_users
-# from database import db_operations
-import sys
-import os
-
-ROOT_DIR = os.path.dirname(
-    os.path.dirname(
-        os.path.abspath(__file__)
-    )
-)
-
-sys.path.append(ROOT_DIR)
 from database import db_operations
 from database.db_operations import save_patient_history
-sys.path.append(
-    os.path.abspath(
-        os.path.join(
-            os.path.dirname(__file__),
-            ".."
-        )
-    )
-)
-
-from digital_twin.twin import DigitalTwin
+from auth import create_user, login_user, get_all_users
 
 
 
 
-print("Admin account created successfully!")
+
 
 # -----------------------------
 # Page Config
