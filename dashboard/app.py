@@ -19,8 +19,7 @@ from database.database import *
 from database import db_operations
 from database.db_operations import save_patient_history
 from auth import create_user, login_user, get_all_users
-
-
+from digital_twin.twin import DigitalTwin
 
 
 
